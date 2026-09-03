@@ -8,6 +8,8 @@ import ProgramUnggulan from "@/components/home/ProgramUnggulan";
 import Ekskul from "@/components/home/Ekskul";
 import Prestasi from "@/components/home/Prestasi";
 import Galeri from "@/components/home/Galeri";
+import BeritaAgenda from "@/components/home/BeritaAgenda";
+import CtaPenutup from "@/components/home/CtaPenutup";
 
 export default function Home() {
   return (
@@ -27,6 +29,10 @@ export default function Home() {
       <Ekskul />
       <Prestasi />
       <Galeri />
+
+      {/* Zona 4 — Information & Action */}
+      <BeritaAgenda />
+      <CtaPenutup />
     </>
   );
 }
