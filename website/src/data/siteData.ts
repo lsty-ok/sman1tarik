@@ -255,26 +255,31 @@ export const galeri = [
 // Quick Info PPDB (Zona 1)
 export const ppdbInfo = [
   {
+    icon: "FileText",
     title: "Pendaftaran",
     desc: "Informasi jadwal dan alur pendaftaran siswa baru.",
     href: "/ppdb",
   },
   {
+    icon: "BadgeCheck",
     title: "Persyaratan",
     desc: "Dokumen dan syarat yang harus disiapkan calon siswa.",
     href: "/ppdb/persyaratan",
   },
   {
+    icon: "Map",
     title: "Jalur Masuk",
     desc: "Jalur zonasi, afirmasi, prestasi, dan perpindahan tugas.",
     href: "/ppdb/jalur",
   },
   {
+    icon: "Megaphone",
     title: "Brosur",
     desc: "Unduh brosur & juknis SPMB untuk panduan lengkap.",
     href: "/ppdb/brosur",
   },
   {
+    icon: "HelpCircle",
     title: "FAQ",
     desc: "Pertanyaan yang sering diajukan seputar PPDB.",
     href: "/ppdb/faq",
