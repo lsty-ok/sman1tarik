@@ -65,23 +65,24 @@ export const keunggulan = [
 // Sambutan Kepala Sekolah (Zona 2). Teks placeholder resmi —
 // isi dengan nama & sambutan aktual bila tersedia.
 export const sambutan = {
-  nama: "Kepala SMA Negeri 1 Tarik",
+  nama: "Wiwik Tri Ernawati, S.Sos.",
   jabatan: "Kepala Sekolah",
   foto: "/images/kepala-sekolah.jpg",
   isi: [
     "Selamat datang di website resmi SMA Negeri 1 Tarik. Kami berkomitmen mewujudkan generasi yang unggul dalam imtaq, kreativitas, prestasi, dan budaya mutu sesuai visi sekolah kami.",
     "Melalui Kurikulum Merdeka dan berbagai program unggulan, kami membina siswa tidak hanya dalam bidang akademik, tetapi juga karakter, keterampilan, dan kepedulian terhadap lingkungan. Kami percaya setiap siswa memiliki potensi yang layak untuk dikembangkan secara maksimal.",
+    "Kepada para siswa, saya berpesan agar terus membangun jiwa literasi dan entrepreneurship di era digital, serta menjunjung integritas sebagai \"duta karakter\" sekolah di tengah masyarakat.",
   ],
 };
 
 // Fasilitas (Zona 3) — berdasarkan data sarana prasarana umum
 export const fasilitas = [
-  { title: "Ruang Kelas yang Nyaman", image: "/images/fasilitas-kelas.jpg" },
-  { title: "Perpustakaan", image: "/images/fasilitas-perpus.jpg" },
-  { title: "Laboratorium IPA", image: "/images/fasilitas-ipa.jpg" },
-  { title: "Laboratorium Komputer", image: "/images/fasilitas-komputer.jpg" },
-  { title: "Lapangan Olahraga", image: "/images/fasilitas-lapangan.jpg" },
-  { title: "Musholla", image: "/images/fasilitas-musholla.jpg" },
+  { title: "Ruang Kelas yang Nyaman", image: "/images/fasilitas-kelas.jpg", hasImage: true },
+  { title: "Perpustakaan", image: "/images/fasilitas-perpus.jpg", hasImage: false },
+  { title: "Laboratorium IPA", image: "/images/fasilitas-ipa.jpg", hasImage: false },
+  { title: "Laboratorium Komputer", image: "/images/fasilitas-komputer.jpg", hasImage: false },
+  { title: "Lapangan Olahraga", image: "/images/fasilitas-lapangan.jpg", hasImage: true },
+  { title: "Musholla", image: "/images/fasilitas-musholla.jpg", hasImage: false },
 ];
 
 // Program Unggulan (Zona 3)
@@ -158,6 +159,11 @@ export const berita = [
     excerpt:
       "SK Kelulusan SMAN 1 Tarik Tahun 2026 telah diterbitkan. Seluruh peserta didik dinyatakan lulus.",
     image: "/images/berita-kelulusan.jpg",
+    content: [
+      "SMA Negeri 1 Tarik telah menerbitkan Surat Keputusan (SK) Kelulusan Peserta Didik Tahun Pelajaran 2025-2026. Berdasarkan hasil rapat pleno dewan guru, seluruh peserta didik dinyatakan LULUS.",
+      "Pengumuman kelulusan dapat dilihat secara daring maupun papan pengumuman sekolah. Peserta didik diharapkan membaca petunjuk pengambilan SKL dan dokumen kelulusan lainnya pada tautan yang telah disediakan.",
+      "Kepada seluruh siswa yang dinyatakan lulus, kami ucapkan selamat dan sukses. Teruslah berkarya dan mengharumkan nama sekolah di jenjang pendidikan maupun dunia kerja selanjutnya.",
+    ],
   },
   {
     id: 2,
@@ -167,6 +173,11 @@ export const berita = [
     excerpt:
       "Dihimbau kepada seluruh alumni yang belum mengambil ijazah agar segera hadir ke sekolah. Pengambilan ijazah tidak dipungut biaya.",
     image: "/images/berita-alumni.jpg",
+    content: [
+      "Dihimbau kepada seluruh alumni SMA Negeri 1 Tarik yang belum mengambil ijazah untuk segera hadir ke sekolah pada jam operasional.",
+      "Pengambilan ijazah tidak dipungut biaya sepeser pun. Alumni diharapkan membawa dokumen identitas diri dan mengikuti prosedur yang diberlakukan oleh tata usaha sekolah.",
+      "Untuk informasi lebih lanjut mengenai jadwal dan tata cara pengambilan ijazah, silakan menghubungi bagian tata usaha SMA Negeri 1 Tarik.",
+    ],
   },
   {
     id: 3,
@@ -176,6 +187,11 @@ export const berita = [
     excerpt:
       "Kami ucapkan selamat dan sukses kepada siswa-siswi yang dinyatakan diterima di Perguruan Tinggi Negeri melalui jalur SNBP.",
     image: "/images/berita-snbp.jpg",
+    content: [
+      "Prestasi membanggakan kembali ditorehkan oleh siswa-siswi SMA Negeri 1 Tarik yang dinyatakan diterima di Perguruan Tinggi Negeri melalui jalur Seleksi Nasional Berdasarkan Prestasi (SNBP) tahun 2025.",
+      "Keberhasilan ini merupakan buah dari prestasi akademik, kedisiplinan, dan dukungan penuh dari para guru serta orang tua selama proses belajar mengajar.",
+      "Kami mengucapkan selamat dan sukses kepada seluruh siswa yang diterima. Semoga menjadi motivasi bagi adik-adik kelas untuk terus berprestasi.",
+    ],
   },
   {
     id: 4,
@@ -185,6 +201,11 @@ export const berita = [
     excerpt:
       "Informasi jadwal pelaksanaan SPMB (sebelumnya PPDB) SMA Provinsi Jawa Timur tahun 2025.",
     image: "/images/berita-spmb.jpg",
+    content: [
+      "Seleksi Penerimaan Murid Baru (SPMB), yang sebelumnya dikenal sebagai PPDB, untuk jenjang SMA Provinsi Jawa Timur tahun 2025 telah memasuki tahap pelaksanaan.",
+      "Calon peserta didik diharapkan memantau jadwal resmi yang ditetapkan oleh Dinas Pendidikan Provinsi Jawa Timur serta menyiapkan seluruh dokumen persyaratan dengan baik.",
+      "Informasi lebih lanjut mengenai jalur, jadwal, dan alur pendaftaran dapat dilihat pada halaman PPDB/SPMB di website ini.",
+    ],
   },
 ];
 
@@ -299,4 +320,247 @@ export const ppdbInfo = [
     desc: "Pertanyaan yang sering diajukan seputar PPDB.",
     href: "/ppdb/faq",
   },
+];
+
+// Alur pendaftaran SPMB (umum, mengikuti ketentuan Dinas Pendidikan
+// Provinsi Jawa Timur)
+export const alurPendaftaran = [
+  "Menyiapkan seluruh dokumen persyaratan yang telah ditentukan.",
+  "Memantau jadwal resmi SPMB yang diumumkan oleh Dinas Pendidikan Provinsi Jawa Timur.",
+  "Melakukan pendaftaran melalui laman resmi SPMB pada periode pendaftaran.",
+  "Memilih sekolah dan jalur sesuai dengan ketentuan yang berlaku.",
+  "Menunggu hasil seleksi yang diumumkan sesuai jadwal resmi.",
+  "Melakukan daftar ulang bagi calon siswa yang dinyatakan diterima.",
+];
+
+// Syarat / dokumen umum SPMB
+export const ppdbPersyaratan = [
+  "Ijazah atau Surat Keterangan Lulus (SKL) SMP/MTs sederajat.",
+  "Akta Kelahiran calon peserta didik.",
+  "Kartu Keluarga (KK) yang masih berlaku.",
+  "Kartu Identitas (KTP/KK) orang tua atau wali.",
+  "Dokumen pendukung sesuai jalur pendaftaran yang dipilih (misal: sertifikat prestasi, SK pindah tugas, dll).",
+];
+
+// Jalur masuk SPMB satu pintu (umum level provinsi)
+export const ppdbJalur = [
+  {
+    nama: "Jalur Domisili (Zonasi)",
+    desc: "Diperuntukkan bagi calon peserta didik berdasarkan jarak domisili tempat tinggal ke sekolah, sesuai dengan ketentuan zonasi.",
+  },
+  {
+    nama: "Jalur Afirmasi",
+    desc: "Diperuntukkan bagi calon peserta didik dari keluarga ekonomi tidak mampu dan/atau penyandang disabilitas sesuai ketentuan.",
+  },
+  {
+    nama: "Jalur Prestasi",
+    desc: "Diperuntukkan bagi calon peserta didik dengan prestasi akademik maupun non-akademik yang dibuktikan dengan sertifikat/piagam.",
+  },
+  {
+    nama: "Jalur Perpindahan Tugas Orang Tua/Wali",
+    desc: "Diperuntukkan bagi calon peserta didik yang mengikuti perpindahan tugas orang tua/wali antar daerah.",
+  },
+];
+
+// FAQ seputar PPDB/SPMB
+export const ppdbFaq = [
+  {
+    q: "Apa perbedaan PPDB dan SPMB?",
+    a: "SPMB (Seleksi Penerimaan Murid Baru) adalah istilah terbaru yang menggantikan PPDB untuk jenjang yang dikelola oleh pemerintah provinsi, termasuk SMA di Jawa Timur. Secara prinsip, keduanya adalah mekanisme penerimaan murid baru yang berbasis domisili, afirmasi, prestasi, dan perpindahan tugas.",
+  },
+  {
+    q: "Bagaimana cara mengetahui jadwal pendaftaran?",
+    a: "Jadwal resmi SPMB diumumkan oleh Dinas Pendidikan Provinsi Jawa Timur melalui laman resminya. Pantau pengumuman resmi dan hubungi bagian tata usaha sekolah untuk informasi lebih lanjut.",
+  },
+  {
+    q: "Apakah pendaftaran dipungut biaya?",
+    a: "Tidak. Pelaksanaan SPMB diselenggarakan tanpa dipungut biaya sepeser pun. Waspadai pihak-pihak yang meminta pungutan terkait penerimaan murid baru.",
+  },
+  {
+    q: "Dokumen apa saja yang harus disiapkan?",
+    a: "Dokumen pokok meliputi ijazah/SKL, akta kelahiran, kartu keluarga, dan identitas orang tua/wali, serta dokumen pendukung sesuai jalur yang dipilih.",
+  },
+];
+
+// ============================================================
+// SUB-JOB D — DATA PROFIL, AKADEMIK & KESISWAAN (riset)
+// ============================================================
+
+// Visi, Misi & Tujuan (sumber: sman1tarik.sch.id/about/visi-dan-misi/)
+export const visiMisi = {
+  visi: "Unggul dalam IMTAQ, Kreatifitas, Prestasi, dan Budaya Mutu.",
+  misi: [
+    "Membentuk pribadi peserta didik yang beriman dan bertaqwa melalui kegiatan keagamaan sesuai dengan keyakinan dan kepercayaan masing-masing.",
+    "Meningkatkan penumbuhan budi pekerti peserta didik menjadi manusia yang berbudi pekerti luhur melalui kegiatan gerakan literasi sekolah, sekolah ramah anak, sekolah sehat, sekolah aman dan 5S (salam, senyum, salim, sapa, dan santun).",
+    "Meningkatkan peran aktif peserta didik dalam kegiatan ekstrakurikuler.",
+    "Meningkatkan jiwa kewirausahaan (entrepreneurship) kepada peserta didik dan pelibatan publik.",
+    "Meningkatkan kreatifitas pendidik dalam kegiatan pembelajaran aktif.",
+    "Meningkatkan kreatifitas kinerja tenaga kependidikan.",
+    "Meningkatkan peran aktif peserta didik dalam kegiatan intra dan ekstra kurikuler.",
+    "Meningkatkan peran aktif pendidik dan tenaga kependidikan dalam kegiatan intra dan ekstra kurikuler.",
+    "Meningkatkan prestasi peserta didik dalam bidang akademik dan non akademik di tingkat regional dan nasional.",
+    "Meningkatkan pemahaman potensi diri warga sekolah melalui sikap disiplin dan tertib dalam kehidupannya.",
+    "Meningkatkan aktualisasi potensi diri warga sekolah melalui kegiatan kurikuler.",
+    "Meningkatkan pengelolaan sekolah yang partisipatif dan demokratif seluruh warga sekolah.",
+    "Meningkatkan profesionalisme warga sekolah untuk mewujudkan nilai budaya mutu sekolah.",
+  ],
+  tujuan: [
+    "Mempersiapkan peserta didik yang taat beribadah dan berakhlak mulia.",
+    "Membiasakan budaya literasi, ramah anak, sehat, dan aman di lingkungan sekolah.",
+    "Menumbuhkan minat, bakat, dan kreativitas peserta didik melalui kegiatan intra dan ekstrakurikuler.",
+    "Menanamkan jiwa kewirausahaan peserta didik yang kreatif dan mandiri.",
+    "Meningkatkan kompetensi dan profesionalisme pendidik serta tenaga kependidikan.",
+    "Mengoptimalkan pengelolaan sumber daya dan fasilitas sekolah secara partisipatif.",
+    "Mengantarkan peserta didik meraih prestasi akademik dan non-akademik hingga tingkat regional dan nasional.",
+    "Mewujudkan nilai budaya mutu di seluruh aspek kehidupan sekolah.",
+  ],
+};
+
+// Identitas Sekolah (sumber: Dapodik Kemendikbud & website resmi)
+export const identitasSekolah = [
+  { label: "Nama Sekolah", value: "SMA Negeri 1 Tarik" },
+  { label: "NPSN", value: "20501704" },
+  { label: "Status / Bentuk", value: "Negeri / SMA" },
+  { label: "Status Kepemilikan", value: "Pemerintah Daerah" },
+  { label: "SK Pendirian", value: "188/1069/404.1.1.3/2007" },
+  { label: "Tanggal Didirikan", value: "4 September 2007" },
+  { label: "Akreditasi", value: "A (SK 164/BAP-S/M/SK/XI/2017)" },
+  { label: "Alamat", value: "Jl. Raya Janti, Kec. Tarik, Kab. Sidoarjo, Jawa Timur 61265" },
+  { label: "Sistem Penyelenggaraan", value: "Sehari penuh (Full Day) · 5 hari kerja" },
+  { label: "Bank", value: "Bank JATIM" },
+  { label: "Sertifikasi ISO", value: "Belum Bersertifikat" },
+  { label: "Sumber Listrik", value: "PLN · 39.350 Watt" },
+];
+
+// Guru & Staf (dari data PTK sekolah)
+export const guruStaf = {
+  guru: [
+    "Ibu Guru 1",
+    "Ibu Guru 2",
+    "Ibu Guru 3",
+    "Ibu Guru 4",
+    "Bapak Guru 1",
+    "Bapak Guru 2",
+    "Bapak Guru 3",
+    "Bapak Guru 4",
+  ],
+  staf: [
+    "Operator 1",
+    "Operator 2",
+    "Staff TU 1",
+    "Staff TU 2",
+    "Staff Admin",
+    "Staff Keuangan",
+  ],
+  totalGuru: "± 60",
+  totalSiswa: "± 1.268",
+};
+
+// Kurikulum (sumber: Dapodik & jurnal)
+export const kurikulum = {
+  nama: "Kurikulum Merdeka",
+  deskripsi:
+    "SMAN 1 Tarik menerapkan Kurikulum Merdeka dengan pembelajaran Abad 21 yang menekankan prinsip 4C (Critical Thinking, Creativity, Collaboration, and Communication). Guru berperan sebagai fasilitator dan pembelajaran didukung teknologi/digitalisasi di dalam kelas.",
+  prinsip: [
+    { title: "Berpikir Kritis (Critical Thinking)", desc: "Melatih siswa menganalisis dan mengevaluasi informasi secara mendalam sebelum mengambil keputusan." },
+    { title: "Kreativitas (Creativity)", desc: "Mendorong siswa menghasilkan gagasan dan karya baru yang inovatif, termasuk produk digital." },
+    { title: "Kolaborasi (Collaboration)", desc: "Membiasakan kerja sama tim dalam projek dan kegiatan pembelajaran kelompok." },
+    { title: "Komunikasi (Communication)", desc: "Mengasah kemampuan menyampaikan ide secara efektif baik lisan maupun tulisan." },
+  ],
+  integritas:
+    "Sekolah dikenal menerapkan kebijakan ketat \"zero score\" bagi kecurangan atau menyontek sebagai wujud implementasi nilai integritas dalam proses pembelajaran.",
+};
+
+// Program Unggulan Akademik (sumber: Radar Jatim & jurnal)
+export const programUnggulanAkademik = [
+  {
+    icon: "Megaphone",
+    title: "Gelar Karya Star Day Project",
+    desc: "Implementasi masif P5 dengan program andalan kewirausahaan, di mana siswa membuat inovasi produk digital, mengelola stand digital marketing, dan F&B untuk membangun jiwa entrepreneurship. Dikhususkan pada Fase E.",
+  },
+  {
+    icon: "Moon",
+    title: "Keagamaan & Karakter",
+    desc: "Program Dhuha berjamaah rutin, Istighotsah mingguan, dan peringatan hari besar Islam. Terdapat juga program siswa magang menjadi penceramah/bilal di musala atau masjid sekitar.",
+  },
+  {
+    icon: "FlaskConical",
+    title: "Kelas Sains & Riset",
+    desc: "Fokus pengembangan kompetensi sains dengan pembinaan olimpiade dan karya ilmiah remaja.",
+  },
+  {
+    icon: "Landmark",
+    title: "Bimbingan PTN",
+    desc: "Pendampingan intensif persiapan SNBP & SNBT. Terbukti siswa diterima di PTN melalui jalur SNBP secara konsisten.",
+  },
+];
+
+// Mata Pelajaran (Kurikulum Merdeka Fase E & F)
+export const mataPelajaran = {
+  faseE:
+    "Kelas X menggunakan Fase E dengan mata pelajaran bersifat umum tanpa penjurusan ketat, mencakup Fisika, Kimia, Biologi, Sosiologi, Ekonomi, Geografi, dan lainnya.",
+  faseF:
+    "Kelas XI dan XII menggunakan Fase F, di mana siswa memilih mata pelajaran pilihan sesuai minat (kelompok MIPA, IPS, atau Bahasa) di samping mata pelajaran wajib.",
+  wajib: [
+    "Pendidikan Agama & Budi Pekerti",
+    "Pendidikan Pancasila (PKn)",
+    "Bahasa Indonesia",
+    "Matematika",
+    "Bahasa Inggris",
+    "Pendidikan Jasmani, Olahraga & Kesehatan (PJOK)",
+    "Sejarah",
+    "Seni Budaya",
+  ],
+  pilihan: ["Matematika Lanjut", "Fisika", "Kimia", "Biologi", "Ekonomi", "Sosiologi", "Geografi", "Bahasa & Sastra"],
+};
+
+// Jadwal (sumber: Kemdikbud & web)
+export const jadwalSekolah = {
+  sistem: "Sehari penuh · 5 hari kerja (Senin–Jumat)",
+  jamMasuk: "Pukul 06.45 – 07.00 WIB",
+  jamPulang: "± Pukul 15.30 WIB (Senin–Jumat)",
+  catatan: [
+    "Pembelajaran dimulai pagi hari hingga sore hari setiap hari kerja.",
+    "Istirahat diselingi pelaksanaan salat Dzuhur dan Ashar berjamaah.",
+    "Pada hari Jumat dilaksanakan salat Jumat berjamaah.",
+  ],
+};
+
+// Ekstrakurikuler detail (sumber: alumni/Radar Jatim)
+export const ekskulDetail = [
+  { icon: "Flag", name: "Paskibra (KOPASTAR)", desc: "Korps SMAN 1 Tarik, sangat dominan dan sering menjadi juara dalam berbagai lomba Paskibraka." },
+  { icon: "Compass", name: "Pramuka", desc: "Diwajibkan dalam kurikulum, berprestasi lintas kota dan menjadi wadah pengembangan kepemimpinan." },
+  { icon: "Medal", name: "Atletik", desc: "Ekskul tertua di sekolah, langganan juara pada cabang lari, cakram, lembing, dan lainnya." },
+  { icon: "HeartPulse", name: "PMR", desc: "Palang Merah Remaja yang berperan sebagai penolong pertama dan \"dokter cilik\" warga sekolah." },
+  { icon: "Trophy", name: "Bola Basket", desc: "Ekskul olahraga favorit yang aktif mengikuti kompetisi antar sekolah." },
+  { icon: "Music", name: "Al-Banjari (Al-Musthofa)", desc: "Sering menjadi penampil utama acara sekolah dan pernah menjadi juara 1 se-Mojokerto Sidoarjo." },
+  { icon: "ShieldCheck", name: "Karate", desc: "Sangat berprestasi hingga taraf internasional, membawa nama sekolah di kancah nasional maupun global." },
+  { icon: "Lightbulb", name: "Karya Ilmiah Remaja", desc: "Wadah pengembangan riset dan karya ilmiah siswa dalam berbagai bidang." },
+  { icon: "Mic2", name: "Madigstar (Media Digital)", desc: "Media digital sekolah untuk pengembangan kreativitas konten dan jurnalistik siswa." },
+];
+
+// Organisasi Siswa
+export const organisasiSiswa = [
+  { icon: "Users", name: "OSIS", desc: "Organisasi intra tertinggi sebagai wadah kepemimpinan dan berbagai program kerja siswa." },
+  { icon: "Scale", name: "MPK", desc: "Majelis Perwakilan Kelas yang menjadi mitra pengawas OSIS dan sangat berpengaruh dalam program kerja sekolah." },
+  { icon: "Star", name: "Duta Sekolah", desc: "Terlibat erat bersama OSIS dan MPK pada gelaran besar sekolah, seperti drama kolosal Islami." },
+  { icon: "ShieldAlert", name: "Satgas BNN", desc: "Sekolah pernah dinobatkan 10 besar Sekolah Bebas Narkoba se-Jawa Timur dan memiliki Satgas khusus pengetahuan Narkotika." },
+];
+
+// Prestasi detail
+export const prestasiDetail = [
+  { icon: "GraduationCap", kategori: "Akademik", title: "Siswa Diterima di PTN Jalur SNBP", desc: "Publikasi khusus daftar kelulusan siswa SMAN 1 Tarik yang diterima di PTN melalui jalur SNBP (prestasi nilai rapor).", tahun: "2025" },
+  { icon: "Medal", kategori: "Olahraga", title: "Karate Internasional Unesa Rektor Cup II", desc: "Memborong 10 medali (5 emas, 5 perak); 5 siswa memperoleh Golden Ticket masuk Universitas Negeri Surabaya.", tahun: "2024" },
+  { icon: "Trophy", kategori: "Olahraga", title: "Porkab Sidoarjo", desc: "Memborong 8 medali (4 emas, 3 perak, 1 perunggu) pada Pekan Olahraga Kabupaten Sidoarjo.", tahun: "2024" },
+  { icon: "PenLine", kategori: "Seni/Sastra", title: "Juara Menulis Cerpen", desc: "Siswi SMAN 1 Tarik meraih juara lomba menulis cerpen tingkat regional.", tahun: "—" },
+  { icon: "BookOpen", kategori: "Seni/Sastra", title: "Komik Digital \"Si Pembandel\"", desc: "Siswi Mentari Ratnaning merilis komik digital berjudul \"Si Pembandel\" sebagai karya kreatif siswa.", tahun: "—" },
+];
+
+// Kegiatan Siswa
+export const kegiatanSiswa = [
+  { icon: "Megaphone", name: "Gelar Karya Star Day Project", desc: "Eksebisi hasil karya produk digital dan UMKM makanan-minuman dari P5 Kewirausahaan." },
+  { icon: "Moon", name: "Peringatan Hari Besar Islam", desc: "Isra' Mi'raj dan Maulid Nabi dirayakan besar-besaran dengan drama kolosal, lomba Qiroah, Kaligrafi, Vokal Solo Islami, dan Cerita Islam." },
+  { icon: "Trophy", name: "Class Meeting", desc: "Acara rutin pasca ujian (STS/SAS) antar kelas untuk menyalurkan minat dan bakat siswa." },
+  { icon: "Backpack", name: "Goes to Campus & Industry", desc: "Kegiatan study literasi berupa kunjungan ke kampus dan industri." },
+  { icon: "PartyPopper", name: "Kirab Pelepasan Lulusan", desc: "Prosesi wisuda yang diiringi kirab kepala sekolah, tarian Rama-Shinta, dan iringan Gending Kebo Giro untuk lulusan angkatan." },
 ];

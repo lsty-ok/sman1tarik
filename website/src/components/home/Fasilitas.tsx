@@ -1,6 +1,28 @@
-import { fasilitas } from "@/data/siteData";
+import Image from "next/image";
+import {
+  BookOpen,
+  Building2,
+  FlaskConical,
+  Laptop,
+  School,
+  Trophy,
+} from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
-export default function Fasilitas() {
+import { getFasilitas } from "@/lib/data";
+
+const placeholderIcons: Record<string, LucideIcon> = {
+  "Ruang Kelas yang Nyaman": School,
+  Perpustakaan: BookOpen,
+  "Laboratorium IPA": FlaskConical,
+  "Laboratorium Komputer": Laptop,
+  "Lapangan Olahraga": Trophy,
+  Musholla: Building2,
+};
+
+export default async function Fasilitas() {
+  const fasilitas = await getFasilitas();
+
   return (
     <section className="bg-white">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
@@ -18,24 +40,39 @@ export default function Fasilitas() {
         </div>
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {fasilitas.map((item) => (
-            <div
-              key={item.title}
-              className="group overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all hover:shadow-md"
-            >
-              <div className="relative aspect-[16/10] w-full overflow-hidden bg-gradient-to-br from-blue-100 to-slate-200">
-                {/* Placeholder — ganti dengan foto fasilitas aktual */}
-                <div className="flex h-full w-full items-center justify-center text-4xl font-bold text-blue-300/70">
-                  {item.title.charAt(0)}
+          {fasilitas.map((item) => {
+            const Icon = placeholderIcons[item.title] ?? Building2;
+            return (
+              <div
+                key={item.title}
+                className="group overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all hover:shadow-md"
+              >
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-gradient-to-br from-blue-100 to-slate-200">
+                  {item.hasImage ? (
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  ) : (
+                    <div className="flex h-full w-full flex-col items-center justify-center gap-2 text-blue-300/70">
+                      <Icon size={40} strokeWidth={1.5} />
+                      <span className="text-xs font-medium uppercase tracking-wide">
+                        {item.title}
+                      </span>
+                    </div>
+                  )}
+                </div>
+                <div className="p-4">
+                  <h3 className="font-semibold text-slate-900 group-hover:text-blue-700">
+                    {item.title}
+                  </h3>
                 </div>
               </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-slate-900 group-hover:text-blue-700">
-                  {item.title}
-                </h3>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { Quote } from "lucide-react";
 
-import { sambutan } from "@/data/siteData";
+import { getSambutan } from "@/lib/data";
 
-export default function Sambutan() {
+export default async function Sambutan() {
+  const sambutan = await getSambutan();
+
   return (
     <section className="bg-slate-50">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">

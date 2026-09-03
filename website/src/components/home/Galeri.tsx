@@ -1,10 +1,24 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
-import { galeri } from "@/data/siteData";
+import { getGaleri } from "@/lib/data";
+import type { GaleriItem } from "@/lib/supabase/types";
 
 export default function Galeri() {
+  const [items, setItems] = useState<GaleriItem[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getGaleri()
+      .then(setItems)
+      .catch(() => {})
+      .finally(() => setLoading(false));
+  }, []);
+
   return (
     <section className="bg-white">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
@@ -27,24 +41,32 @@ export default function Galeri() {
         </div>
 
         {/* Masonry-style grid */}
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-          {galeri.map((item, i) => (
-            <div
-              key={i}
-              className={`group relative overflow-hidden rounded-xl bg-slate-100 ${
-                (i === 0 || i === 3) ? "aspect-[4/5]" : "aspect-square"
-              }`}
-            >
-              <Image
-                src={item.src}
-                alt={item.alt}
-                fill
-                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-          ))}
-        </div>
+        {loading ? (
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+            {[0, 1, 2, 3, 4].map((i) => (
+              <div key={i} className="aspect-square animate-pulse rounded-xl bg-slate-100" />
+            ))}
+          </div>
+        ) : (
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+            {items.map((item, i) => (
+              <div
+                key={item.id}
+                className={`group relative overflow-hidden rounded-xl bg-slate-100 ${
+                  i === 0 || i === 3 ? "aspect-[4/5]" : "aspect-square"
+                }`}
+              >
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

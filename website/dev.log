@@ -1,0 +1,26 @@
+
+> website@0.1.0 dev
+> next dev
+
+▲ Next.js 16.3.4 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.3.128:3000
+✓ Ready in 4.5s
+✓ Running next.config.ts took 318ms
+
+ GET / 200 in 984ms (next.js: 597ms, application-code: 388ms)
+ GET / 200 in 207ms (next.js: 30ms, application-code: 177ms)
+[browser] Image with src "/images/kepala-sekolah.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[browser] Image with src "/images/kepala-sekolah.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+ GET / 200 in 179ms (next.js: 10ms, application-code: 170ms)
+[browser] Image with src "/images/kepala-sekolah.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[browser] Image with src "/images/kepala-sekolah.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+ GET / 200 in 23ms (next.js: 8ms, application-code: 15ms)
+ GET / 200 in 82ms (next.js: 7ms, application-code: 74ms)
+ GET /profil/visi-misi 404 in 542ms (next.js: 512ms, application-code: 30ms)
+ GET /profil/visi-misi 404 in 83ms (next.js: 11ms, application-code: 72ms)
+[browser] Image with src "/images/kepala-sekolah.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[browser] Image with src "/images/kepala-sekolah.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+ GET / 200 in 141ms (next.js: 33ms, application-code: 108ms)
+✓ Compiled in 151ms
+ GET / 200 in 114ms (next.js: 15ms, application-code: 100ms)
