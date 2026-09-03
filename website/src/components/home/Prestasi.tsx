@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Trophy, Calendar, ArrowRight } from "lucide-react";
 
 import { prestasi } from "@/data/siteData";
@@ -32,9 +33,13 @@ export default function Prestasi() {
           {/* Featured card */}
           <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm lg:col-span-1">
             <div className="relative aspect-[16/10] w-full overflow-hidden bg-gradient-to-br from-blue-100 to-slate-200">
-              <div className="flex h-full w-full items-center justify-center text-5xl font-bold text-blue-300/70">
-                {featured.title.charAt(0)}
-              </div>
+              <Image
+                src={featured.image}
+                alt={featured.title}
+                fill
+                sizes="(max-width: 1024px) 100vw, 33vw"
+                className="object-cover"
+              />
               <span className="absolute left-3 top-3 rounded-full bg-blue-700 px-3 py-1 text-xs font-semibold text-white">
                 {featured.kategori}
               </span>

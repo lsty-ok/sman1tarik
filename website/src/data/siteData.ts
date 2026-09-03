@@ -243,13 +243,28 @@ export const navMenu = [
   { label: "Kontak", href: "/kontak" },
 ];
 
-// Galeri preview (Zona 3) — potongan gambar slider sekolah
+// Galeri preview (Zona 3) — foto-foto asli SMA Negeri 1 Tarik
 export const galeri = [
-  { src: "/images/galeri-1.jpg", alt: "Kegiatan sekolah SMAN 1 Tarik" },
-  { src: "/images/galeri-2.jpg", alt: "Kegiatan sekolah SMAN 1 Tarik" },
-  { src: "/images/galeri-3.jpg", alt: "Kegiatan sekolah SMAN 1 Tarik" },
-  { src: "/images/galeri-4.jpg", alt: "Kegiatan sekolah SMAN 1 Tarik" },
-  { src: "/images/galeri-5.jpg", alt: "Kegiatan sekolah SMAN 1 Tarik" },
+  {
+    src: "/images/galeri-1.jpg",
+    alt: "Taman depan dengan papan Keren Tanpa Narkoba",
+  },
+  {
+    src: "/images/galeri-2.jpg",
+    alt: "Pintu gerbang dan spanduk selamat datang",
+  },
+  {
+    src: "/images/galeri-3.jpg",
+    alt: "Halaman / plaza sekolah dengan taman",
+  },
+  {
+    src: "/images/galeri-4.jpg",
+    alt: "Gedung kelas dengan selasar dan pepohonan",
+  },
+  {
+    src: "/images/galeri-5.jpg",
+    alt: "Selasar samping gedung dengan hiasan umbul-umbul",
+  },
 ];
 
 // Quick Info PPDB (Zona 1)

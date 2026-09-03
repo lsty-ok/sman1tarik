@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 import { galeri } from "@/data/siteData";
@@ -30,13 +31,17 @@ export default function Galeri() {
           {galeri.map((item, i) => (
             <div
               key={i}
-              className={`group overflow-hidden rounded-xl bg-slate-100 ${
+              className={`group relative overflow-hidden rounded-xl bg-slate-100 ${
                 (i === 0 || i === 3) ? "aspect-[4/5]" : "aspect-square"
               }`}
             >
-              <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-blue-100 to-slate-200 text-4xl font-bold text-blue-300/70 transition-transform group-hover:scale-105">
-                {i + 1}
-              </div>
+              <Image
+                src={item.src}
+                alt={item.alt}
+                fill
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
             </div>
           ))}
         </div>

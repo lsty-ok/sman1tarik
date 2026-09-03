@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Quote } from "lucide-react";
 
 import { sambutan } from "@/data/siteData";
@@ -10,10 +11,13 @@ export default function Sambutan() {
           {/* Foto */}
           <div className="relative mx-auto max-w-sm">
             <div className="aspect-square w-full overflow-hidden rounded-2xl bg-slate-200">
-              {/* Placeholder — ganti dengan foto kepala sekolah aktual */}
-              <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-blue-100 to-blue-200 text-blue-400">
-                <span className="text-6xl font-bold">S</span>
-              </div>
+              <Image
+                src={sambutan.foto}
+                alt={`Foto ${sambutan.jabatan} SMA Negeri 1 Tarik`}
+                fill
+                sizes="(max-width: 768px) 100vw, 384px"
+                className="object-cover"
+              />
             </div>
             <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-blue-700 px-5 py-2 text-sm font-semibold text-white shadow-lg">
               {sambutan.jabatan}

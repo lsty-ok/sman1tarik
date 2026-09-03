@@ -17,9 +17,14 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between gap-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-700 text-white font-bold text-sm">
-              SMAN
-            </div>
+            <Image
+              src="/images/logo.png"
+              alt="Logo SMA Negeri 1 Tarik"
+              width={40}
+              height={40}
+              className="h-10 w-10 object-contain"
+              priority
+            />
             <div className="leading-tight hidden sm:block">
               <span className="block text-sm font-bold text-slate-900">
                 SMA Negeri 1 Tarik

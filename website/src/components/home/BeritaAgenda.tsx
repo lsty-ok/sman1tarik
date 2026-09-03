@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Calendar, ChevronRight, Clock, ArrowRight } from "lucide-react";
 
 import { berita, agenda } from "@/data/siteData";
@@ -35,8 +36,14 @@ export default function BeritaAgenda() {
                 key={item.id}
                 className="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all hover:border-blue-300 hover:shadow-md sm:flex-row"
               >
-                <div className="flex h-24 w-full shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-blue-100 to-slate-200 text-3xl font-bold text-blue-300/70 sm:w-32">
-                  {item.title.charAt(0)}
+                <div className="relative h-24 w-full shrink-0 overflow-hidden rounded-lg bg-slate-100 sm:w-32">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 128px"
+                    className="object-cover"
+                  />
                 </div>
                 <div className="flex-1">
                   <div className="flex flex-wrap items-center gap-2 text-xs text-slate-500">
