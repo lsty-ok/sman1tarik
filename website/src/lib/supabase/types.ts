@@ -91,6 +91,7 @@ export interface IdentitasRow {
 }
 
 export interface GuruStafRow {
+  id?: string;
   nama: string;
   peran: string;
 }
