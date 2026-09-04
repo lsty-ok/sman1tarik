@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
+import {
+  PublicNavbar,
+  PublicFooter,
+  PublicFloatingWhatsApp,
+} from "@/components/layout/PublicChrome";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sman1tarik.type3core.my.id"),
@@ -69,10 +71,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="id" className="h-full antialiased">
       <body className="min-h-full flex flex-col font-sans">
-        <Navbar />
+        <PublicNavbar />
         <main className="flex-1">{children}</main>
-        <Footer />
-        <FloatingWhatsApp />
+        <PublicFooter />
+        <PublicFloatingWhatsApp />
       </body>
     </html>
   );
