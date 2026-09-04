@@ -1,0 +1,46 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradPorkab" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1d4ed8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="675" fill="url(#gradPorkab)"/>
+  
+  <g opacity="0.12">
+    <circle cx="200" cy="180" r="60" fill="white"/>
+    <circle cx="300" cy="480" r="50" fill="white"/>
+    <circle cx="900" cy="220" r="70" fill="white"/>
+    <circle cx="1000" cy="500" r="55" fill="white"/>
+  </g>
+  
+  <g opacity="0.18">
+    <circle cx="450" cy="160" r="30" fill="white"/>
+    <circle cx="520" cy="160" r="30" fill="white"/>
+    <circle cx="590" cy="160" r="30" fill="white"/>
+    <circle cx="660" cy="160" r="30" fill="white"/>
+    <circle cx="730" cy="160" r="30" fill="white"/>
+    <circle cx="800" cy="160" r="30" fill="white"/>
+    <circle cx="485" cy="210" r="30" fill="white"/>
+    <circle cx="665" cy="210" r="30" fill="white"/>
+  </g>
+  
+  <text x="600" y="290" font-family="Arial, sans-serif" font-size="68" font-weight="bold" fill="white" text-anchor="middle">
+    8 MEDALI
+  </text>
+  
+  <text x="600" y="370" font-family="Arial, sans-serif" font-size="58" font-weight="bold" fill="white" text-anchor="middle">
+    PORKAB ATLETIK
+  </text>
+  
+  <text x="600" y="440" font-family="Arial, sans-serif" font-size="42" fill="white" text-anchor="middle" opacity="0.95">
+    2024
+  </text>
+  
+  <rect x="450" y="480" width="300" height="4" fill="white" opacity="0.5" rx="2"/>
+  
+  <text x="600" y="540" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" opacity="0.9">
+    SMA Negeri 1 Tarik
+  </text>
+</svg>

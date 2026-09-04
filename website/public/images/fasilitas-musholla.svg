@@ -1,0 +1,45 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1280" height="720" fill="url(#grad4)"/>
+  
+  <g opacity="0.15">
+    <path d="M300 250 L350 180 L400 250 L400 400 L300 400 Z" fill="white"/>
+    <circle cx="350" cy="160" r="20" fill="white"/>
+    <path d="M350 140 L350 100" stroke="white" stroke-width="4"/>
+    <path d="M340 110 L350 100 L360 110" fill="white"/>
+    
+    <path d="M880 250 L930 180 L980 250 L980 400 L880 400 Z" fill="white"/>
+    <circle cx="930" cy="160" r="20" fill="white"/>
+    <path d="M930 140 L930 100" stroke="white" stroke-width="4"/>
+    <path d="M920 110 L930 100 L940 110" fill="white"/>
+  </g>
+  
+  <g opacity="0.2">
+    <circle cx="640" cy="150" r="60" fill="none" stroke="white" stroke-width="3"/>
+    <path d="M610 120 Q640 90 670 120" fill="none" stroke="white" stroke-width="3"/>
+  </g>
+  
+  <text x="640" y="330" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">
+    MUSHOLLA
+  </text>
+  
+  <text x="640" y="410" font-family="Arial, sans-serif" font-size="36" fill="white" text-anchor="middle" opacity="0.9">
+    SMA Negeri 1 Tarik
+  </text>
+  
+  <text x="640" y="490" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" opacity="0.8">
+    Tempat Ibadah yang Nyaman
+  </text>
+  
+  <g opacity="0.25">
+    <rect x="500" y="560" width="280" height="4" fill="white" rx="2"/>
+    <rect x="520" y="580" width="240" height="4" fill="white" rx="2"/>
+    <rect x="540" y="600" width="200" height="4" fill="white" rx="2"/>
+  </g>
+</svg>

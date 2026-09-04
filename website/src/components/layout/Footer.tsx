@@ -174,6 +174,13 @@ export default function Footer() {
           </span>
           <span>NPSN: {siteInfo.npsn} · Terakreditasi A</span>
         </div>
+        <div className="border-t border-slate-800/60">
+          <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8 text-[11px] text-slate-500">
+            Situs ini adalah proyek portofolio pengembangan web dan bukan situs
+            resmi SMA Negeri 1 Tarik. Informasi resmi sekolah tersedia di
+            situs resmi SMA Negeri 1 Tarik.
+          </div>
+        </div>
       </div>
     </footer>
   );

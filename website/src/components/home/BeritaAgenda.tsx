@@ -7,6 +7,7 @@ import { Calendar, ChevronRight, Clock, ArrowRight } from "lucide-react";
 
 import { getBerita, getAgenda } from "@/lib/data";
 import type { Berita, Agenda } from "@/lib/supabase/types";
+import { Reveal } from "@/components/ui/Reveal";
 
 function formatDate(iso: string) {
   const [y, m, d] = iso.split("-").map(Number);
@@ -56,11 +57,11 @@ export default function BeritaAgenda() {
         ) : (
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             {/* Left — 3 news */}
-            <div className="space-y-6 lg:col-span-2">
+            <Reveal className="space-y-6 lg:col-span-2">
               {latest.map((item) => (
                 <article
                   key={item.id}
-                  className="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all hover:border-blue-300 hover:shadow-md sm:flex-row"
+                  className="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:border-blue-300 hover:shadow-lg hover:-translate-y-1 sm:flex-row"
                 >
                   <div className="relative h-24 w-full shrink-0 overflow-hidden rounded-lg bg-slate-100 sm:w-32">
                     <Image
@@ -68,7 +69,7 @@ export default function BeritaAgenda() {
                       alt={item.title}
                       fill
                       sizes="(max-width: 640px) 100vw, 128px"
-                      className="object-cover"
+                      className="object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                   </div>
                   <div className="flex-1">
@@ -104,10 +105,10 @@ export default function BeritaAgenda() {
                   <ArrowRight size={16} />
                 </Link>
               </div>
-            </div>
+            </Reveal>
 
             {/* Right — agenda */}
-            <aside className="rounded-xl border border-slate-200 bg-slate-50 p-6">
+            <Reveal delay={200} className="rounded-xl border border-slate-200 bg-slate-50 p-6">
               <h3 className="flex items-center gap-2 text-lg font-bold text-slate-900">
                 <Clock size={20} className="text-blue-700" />
                 Agenda Terdekat
@@ -133,10 +134,10 @@ export default function BeritaAgenda() {
                 className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-blue-700 hover:text-blue-800"
               >
                 Lihat semua agenda
-                <ChevronRight size={14} />
-              </Link>
-            </aside>
-          </div>
+                  <ChevronRight size={14} />
+                </Link>
+              </Reveal>
+            </div>
         )}
       </div>
     </section>

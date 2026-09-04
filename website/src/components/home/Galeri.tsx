@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react";
 
 import { getGaleri } from "@/lib/data";
 import type { GaleriItem } from "@/lib/supabase/types";
+import { Reveal } from "@/components/ui/Reveal";
 
 export default function Galeri() {
   const [items, setItems] = useState<GaleriItem[]>([]);
@@ -40,6 +41,7 @@ export default function Galeri() {
           </Link>
         </div>
 
+        <Reveal>
         {/* Masonry-style grid */}
         {loading ? (
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
@@ -52,7 +54,7 @@ export default function Galeri() {
             {items.map((item, i) => (
               <div
                 key={item.id}
-                className={`group relative overflow-hidden rounded-xl bg-slate-100 ${
+                className={`group relative overflow-hidden rounded-xl bg-slate-100 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 ${
                   i === 0 || i === 3 ? "aspect-[4/5]" : "aspect-square"
                 }`}
               >
@@ -61,12 +63,13 @@ export default function Galeri() {
                   alt={item.alt}
                   fill
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="object-cover transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
             ))}
           </div>
         )}
+        </Reveal>
       </div>
     </section>
   );

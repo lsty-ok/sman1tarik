@@ -1,0 +1,37 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradGolden" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1d4ed8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="675" fill="url(#gradGolden)"/>
+  
+  <g opacity="0.15">
+    <rect x="200" y="150" width="300" height="180" fill="white" rx="12" transform="rotate(-8 350 240)"/>
+    <circle cx="950" cy="450" r="80" fill="white"/>
+  </g>
+  
+  <g opacity="0.2">
+    <polygon points="600,120 620,170 670,180 635,215 645,265 600,240 555,265 565,215 530,180 580,170" fill="white"/>
+  </g>
+  
+  <text x="600" y="260" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="white" text-anchor="middle">
+    GOLDEN TICKET
+  </text>
+  
+  <text x="600" y="340" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="white" text-anchor="middle">
+    UNAIR 2025
+  </text>
+  
+  <rect x="450" y="380" width="300" height="4" fill="white" opacity="0.5" rx="2"/>
+  
+  <text x="600" y="450" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle" opacity="0.95">
+    SMA Negeri 1 Tarik
+  </text>
+  
+  <text x="600" y="520" font-family="Arial, sans-serif" font-size="26" fill="white" text-anchor="middle" opacity="0.85">
+    Jalur Istimewa Universitas Airlangga
+  </text>
+</svg>

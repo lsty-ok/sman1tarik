@@ -23,8 +23,12 @@ export const siteInfo = {
   noSkAkreditasi: "164/BAP-S/M/SK/XI/2017",
   luasTanah: "14.649 m²",
   sosial: {
+    // @sman1tarik = akun dengan embed di website resmi (terverifikasi).
+    // @sman1tarik.official & akun ekskul (osismpk/duta/atletik) tidak
+    // terverifikasi keberadaannya dari riset internet — dihindari.
     instagram: "https://www.instagram.com/sman1tarik/",
-    youtube: "https://www.youtube.com/channel/UCDvJCx_13xnQTmKRDaHsRlA",
+    // Handle YouTube sesuai permintaan pemilik (www.youtube.com/@smanegeri1tariksidoarjo240).
+    youtube: "https://www.youtube.com/@smanegeri1tariksidoarjo240",
     facebook: "https://web.facebook.com/sman1tarik",
   },
   // Nomor WhatsApp untuk tombol melayang (dari data sekolah).
@@ -62,27 +66,30 @@ export const keunggulan = [
   },
 ];
 
-// Sambutan Kepala Sekolah (Zona 2). Teks placeholder resmi —
-// isi dengan nama & sambutan aktual bila tersedia.
+// Sambutan Kepala Sekolah (Zona 2) — data LIVE diambil dari Supabase
+// (getSambutan di src/lib/data.ts). Nilai di bawah hanya struktur
+// referensi; kepala sekolah saat ini: Muhammad Fadloli, S.Pd., M.M.
 export const sambutan = {
-  nama: "Wiwik Tri Ernawati, S.Sos.",
+  nama: "Muhammad Fadloli, S.Pd., M.M.",
   jabatan: "Kepala Sekolah",
   foto: "/images/kepala-sekolah.jpg",
   isi: [
-    "Selamat datang di website resmi SMA Negeri 1 Tarik. Kami berkomitmen mewujudkan generasi yang unggul dalam imtaq, kreativitas, prestasi, dan budaya mutu sesuai visi sekolah kami.",
+    "Selamat datang di website SMA Negeri 1 Tarik. Kami berkomitmen mewujudkan generasi yang unggul dalam imtaq, kreativitas, prestasi, dan budaya mutu sesuai visi sekolah kami.",
     "Melalui Kurikulum Merdeka dan berbagai program unggulan, kami membina siswa tidak hanya dalam bidang akademik, tetapi juga karakter, keterampilan, dan kepedulian terhadap lingkungan. Kami percaya setiap siswa memiliki potensi yang layak untuk dikembangkan secara maksimal.",
     "Kepada para siswa, saya berpesan agar terus membangun jiwa literasi dan entrepreneurship di era digital, serta menjunjung integritas sebagai \"duta karakter\" sekolah di tengah masyarakat.",
   ],
 };
 
-// Fasilitas (Zona 3) — berdasarkan data sarana prasarana umum
+// Fasilitas (Zona 3) — data LIVE diambil dari Supabase (getFasilitas di
+// src/lib/data.ts); nilai di bawah referensi struktur saja. Fasilitas
+// tanpa foto nyata memakai ilustrasi SVG buatan internal.
 export const fasilitas = [
   { title: "Ruang Kelas yang Nyaman", image: "/images/fasilitas-kelas.jpg", hasImage: true },
-  { title: "Perpustakaan", image: "/images/fasilitas-perpus.jpg", hasImage: false },
-  { title: "Laboratorium IPA", image: "/images/fasilitas-ipa.jpg", hasImage: false },
-  { title: "Laboratorium Komputer", image: "/images/fasilitas-komputer.jpg", hasImage: false },
+  { title: "Perpustakaan", image: "/images/fasilitas-perpus.svg", hasImage: true },
+  { title: "Laboratorium IPA", image: "/images/fasilitas-ipa.svg", hasImage: true },
+  { title: "Laboratorium Komputer", image: "/images/fasilitas-komputer.svg", hasImage: true },
   { title: "Lapangan Olahraga", image: "/images/fasilitas-lapangan.jpg", hasImage: true },
-  { title: "Musholla", image: "/images/fasilitas-musholla.jpg", hasImage: false },
+  { title: "Musholla", image: "/images/fasilitas-musholla.svg", hasImage: true },
 ];
 
 // Program Unggulan (Zona 3)
@@ -432,28 +439,14 @@ export const identitasSekolah = [
   { label: "Sumber Listrik", value: "PLN · 39.350 Watt" },
 ];
 
-// Guru & Staf (dari data PTK sekolah)
+// Guru & Staf — data LIVE diambil dari Supabase (getGuruStaf di
+// src/lib/data.ts). Halaman profil/guru memakai getGuruStaf; daftar
+// nama fiktif pindahan dihapus agar tidak menyesatkan.
 export const guruStaf = {
-  guru: [
-    "Ibu Guru 1",
-    "Ibu Guru 2",
-    "Ibu Guru 3",
-    "Ibu Guru 4",
-    "Bapak Guru 1",
-    "Bapak Guru 2",
-    "Bapak Guru 3",
-    "Bapak Guru 4",
-  ],
-  staf: [
-    "Operator 1",
-    "Operator 2",
-    "Staff TU 1",
-    "Staff TU 2",
-    "Staff Admin",
-    "Staff Keuangan",
-  ],
-  totalGuru: "± 60",
-  totalSiswa: "± 1.268",
+  guru: [] as string[],
+  staf: [] as string[],
+  totalGuru: "67",
+  totalSiswa: "1.231",
 };
 
 // Kurikulum (sumber: Dapodik & jurnal)

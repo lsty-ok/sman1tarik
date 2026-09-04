@@ -10,8 +10,8 @@ export const metadata = {
 };
 
 // Ringkasan statistik (data branding, dipertahankan di kode)
-const totalGuru = "± 60";
-const totalSiswa = "± 1.268";
+const totalGuru = "67";
+const totalSiswa = "1.231";
 
 export default async function GuruPage() {
   const { guru, staf } = await getGuruStaf();

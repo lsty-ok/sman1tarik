@@ -144,3 +144,39 @@
     @apply font-sans;
   }
 }
+
+@layer utilities {
+  .fade-in-up {
+    animation: fade-in-up 600ms ease-out forwards;
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fade-in-up,
+    *[style*="transition"],
+    *[style*="transform"] {
+      animation: none !important;
+      transition: none !important;
+      transform: none !important;
+    }
+  }
+}

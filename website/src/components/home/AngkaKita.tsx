@@ -1,6 +1,9 @@
+"use client";
+
 import { GraduationCap, UserCheck, ShieldCheck, Map } from "lucide-react";
 
 import { stats } from "@/data/siteData";
+import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 
 export default function AngkaKita() {
   const items = [
@@ -50,7 +53,7 @@ export default function AngkaKita() {
                   <Icon size={26} />
                 </div>
                 <p className="text-3xl font-extrabold text-white">
-                  {item.value}
+                  <AnimatedCounter value={item.value} />
                 </p>
                 <p className="mt-1 text-sm text-blue-100">{item.label}</p>
               </div>

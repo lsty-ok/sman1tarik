@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, ShieldCheck, GraduationCap } from "lucide-react";
 
 import { siteInfo } from "@/data/siteData";
+import { Reveal } from "@/components/ui/Reveal";
 
 export default function Hero() {
   return (
@@ -15,7 +16,7 @@ export default function Hero() {
         }}
       />
       <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
-        <div className="max-w-3xl">
+        <Reveal className="max-w-3xl">
           <span className="inline-flex items-center gap-2 rounded-full bg-white/20 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
             <ShieldCheck size={14} />
             Terakreditasi A · NPSN {siteInfo.npsn}
@@ -47,7 +48,7 @@ export default function Hero() {
               Profil Sekolah
             </Link>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

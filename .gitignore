@@ -1,0 +1,7 @@
+.vercel
+
+# artifacts / local dev
+*.log
+.codegraph/
+.omo/
+fonts/

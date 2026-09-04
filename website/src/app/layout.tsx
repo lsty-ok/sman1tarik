@@ -7,7 +7,8 @@ import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
 
 export const metadata: Metadata = {
   title: "SMAN 1 Tarik | Unggul Prestasi, Luhur Budi Pekerti",
-  description: "Website Resmi SMA Negeri 1 Tarik Sidoarjo.",
+  description:
+    "Website SMA Negeri 1 Tarik Sidoarjo — profil, berita, prestasi, dan informasi sekolah.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

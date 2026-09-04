@@ -10,6 +10,7 @@ import {
 import type { LucideIcon } from "lucide-react";
 
 import { getFasilitas } from "@/lib/data";
+import { Reveal } from "@/components/ui/Reveal";
 
 const placeholderIcons: Record<string, LucideIcon> = {
   "Ruang Kelas yang Nyaman": School,
@@ -39,13 +40,14 @@ export default async function Fasilitas() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {fasilitas.map((item) => {
+        <Reveal>
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {fasilitas.map((item) => {
             const Icon = placeholderIcons[item.title] ?? Building2;
             return (
               <div
                 key={item.title}
-                className="group overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all hover:shadow-md"
+                className="group overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
               >
                 <div className="relative aspect-[16/10] w-full overflow-hidden bg-gradient-to-br from-blue-100 to-slate-200">
                   {item.hasImage ? (
@@ -73,7 +75,8 @@ export default async function Fasilitas() {
               </div>
             );
           })}
-        </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

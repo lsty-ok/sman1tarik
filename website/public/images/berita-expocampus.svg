@@ -1,0 +1,42 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradExpo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1d4ed8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="675" fill="url(#gradExpo)"/>
+  
+  <g opacity="0.1">
+    <rect x="150" y="120" width="180" height="120" fill="white" rx="8" transform="rotate(-10 240 180)"/>
+    <rect x="870" y="120" width="180" height="120" fill="white" rx="8" transform="rotate(10 960 180)"/>
+    <circle cx="600" cy="520" r="90" fill="white"/>
+  </g>
+  
+  <g opacity="0.15">
+    <polygon points="300,550 320,500 340,550" fill="white"/>
+    <polygon points="360,550 380,500 400,550" fill="white"/>
+    <polygon points="420,550 440,500 460,550" fill="white"/>
+  </g>
+  
+  <text x="600" y="200" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">
+    EXPO CAMPUS
+  </text>
+  
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">
+    2026
+  </text>
+  
+  <text x="600" y="360" font-family="Arial, sans-serif" font-size="48" fill="white" text-anchor="middle" opacity="0.95">
+    "EXPLORA"
+  </text>
+  
+  <text x="600" y="430" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle" opacity="0.9">
+    SMA Negeri 1 Tarik
+  </text>
+  
+  <text x="600" y="500" font-family="Arial, sans-serif" font-size="26" fill="white" text-anchor="middle" opacity="0.85">
+    Jelajahi Kampus Impianmu
+  </text>
+</svg>

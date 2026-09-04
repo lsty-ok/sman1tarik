@@ -1,0 +1,42 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradSmapore" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="675" fill="url(#gradSmapore)"/>
+  
+  <g opacity="0.15">
+    <circle cx="250" cy="250" r="70" fill="white"/>
+    <circle cx="950" cy="200" r="60" fill="white"/>
+    <circle cx="850" cy="500" r="80" fill="white"/>
+  </g>
+  
+  <g opacity="0.2">
+    <polygon points="600,80 630,150 700,160 650,210 665,280 600,245 535,280 550,210 500,160 570,150" fill="white"/>
+  </g>
+  
+  <text x="600" y="240" font-family="Arial, sans-serif" font-size="58" font-weight="bold" fill="white" text-anchor="middle">
+    JUARA I NASIONAL
+  </text>
+  
+  <text x="600" y="320" font-family="Arial, sans-serif" font-size="62" font-weight="bold" fill="white" text-anchor="middle">
+    SMAPORE DANCE
+  </text>
+  
+  <text x="600" y="390" font-family="Arial, sans-serif" font-size="42" fill="white" text-anchor="middle" opacity="0.95">
+    2025
+  </text>
+  
+  <rect x="420" y="430" width="360" height="4" fill="white" opacity="0.5" rx="2"/>
+  
+  <text x="600" y="495" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle" opacity="0.9">
+    SMA Negeri 1 Tarik
+  </text>
+  
+  <text x="600" y="555" font-family="Arial, sans-serif" font-size="26" fill="white" text-anchor="middle" opacity="0.85">
+    Prestasi Gemilang Pramuka Tingkat Nasional
+  </text>
+</svg>
