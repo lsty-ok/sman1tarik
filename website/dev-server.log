@@ -357,3 +357,14 @@
 [browser] GoTrueClient@sb-nhbzrsqgxvftxsxlnujs-auth-token:7 (2.114.0) 2026-09-03T15:12:12.840Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key. (src/lib/supabase/client.ts:7:22)
 [browser] Image with src "/images/kepala-sekolah.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
 [browser] Image with src "/images/kepala-sekolah.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[browser] Uncaught Error: Could not find the table 'public.sambutan' in the schema cache
+    at getSambutan (src\lib\data.ts:135:20)
+    at  Sambutan (src\components\home\Sambutan.tsx:7:20)
+  133 |     .limit(1)
+  134 |     .single();
+> 135 |   if (error) throw new Error(error.message);
+      |                    ^
+  136 |   return {
+  137 |     nama: data.nama,
+  138 |     jabatan: data.jabatan,
+[browser] Uncaught TypeError: Failed to execute 'measure' on 'Performance': '​Sambutan' cannot have a negative time stamp.
